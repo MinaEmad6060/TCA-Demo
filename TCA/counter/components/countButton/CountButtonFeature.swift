@@ -1,8 +1,12 @@
 //
 //  CountButtonFeature.swift
-//  TCA
+//  TCA Demo
 //
 //  Created by Mina Emad on 08/12/2025.
+//
+//  This feature demonstrates TCA best practices:
+//  - Child feature with delegate pattern
+//  - Feature communication through actions
 //
 
 import SwiftUI
@@ -37,28 +41,3 @@ public struct CountButtonFeature {
         }
     }
 }
-
-public struct CountButtonView: View {
-    let store: StoreOf<CountButtonFeature>
-    
-    public init(store: StoreOf<CountButtonFeature>) {
-        self.store = store
-    }
-    
-    public var body: some View {
-        Button("Count") {
-            store.send(.countButtonTapped)
-        }
-    }
-}
-
-#if DEBUG
-#Preview {
-    CountButtonView(
-        store: Store(initialState: CountButtonFeature.State()) {
-            CountButtonFeature()
-        }
-    )
-}
-#endif
-

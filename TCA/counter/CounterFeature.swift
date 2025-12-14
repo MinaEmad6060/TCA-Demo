@@ -1,8 +1,13 @@
 //
 //  CounterFeature.swift
-//  TCA
+//  TCA Demo
 //
 //  Created by Mina Emad on 08/12/2025.
+//
+//  This feature demonstrates TCA best practices:
+//  - Feature composition with Scope
+//  - Delegate pattern for feature communication
+//  - Nested feature state management
 //
 
 import SwiftUI
@@ -46,35 +51,3 @@ public struct CounterFeature {
         }
     }
 }
-
-public struct CounterView: View {
-    let store: StoreOf<CounterFeature>
-    
-    public init(store: StoreOf<CounterFeature>) {
-        self.store = store
-    }
-    
-    public var body: some View {
-        VStack {
-            Text("count: \(store.count)")
-            
-            CountButtonView(
-                store: store.scope(
-                    state: \.countButtonState,
-                    action: \.countButtonAction
-                )
-            )
-        }
-    }
-}
-
-#if DEBUG
-#Preview {
-    CounterView(
-        store: Store(initialState: CounterFeature.State()) {
-            CounterFeature()
-        }
-    )
-}
-#endif
-

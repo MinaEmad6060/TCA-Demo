@@ -1,6 +1,6 @@
 //
 //  TCAApp.swift
-//  TCA
+//  TCA Demo
 //
 //  Created by Mina Emad on 08/12/2025.
 //
@@ -12,9 +12,9 @@ import ComposableArchitecture
 struct TCAApp: App {
     var body: some Scene {
         WindowGroup {
-            CounterView(
-                store: Store(initialState: CounterFeature.State()) {
-                    CounterFeature()
+            MainTabsView(
+                store: Store(initialState: MainTabs.State()) {
+                    MainTabs()
                 }
             )
         }

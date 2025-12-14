@@ -11,7 +11,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C00323D82EE6EAE2004C5779 /* TCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C064C33E2EEF1BFF00E576D3 /* TCA Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "TCA Demo.app"; path = "/Users/mina.emad/Desktop/TCA/build/Debug-iphoneos/TCA Demo.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -38,24 +38,15 @@
 			isa = PBXGroup;
 			children = (
 				C00323DA2EE6EAE2004C5779 /* TCA */,
-				C00323D92EE6EAE2004C5779 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		C00323D92EE6EAE2004C5779 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C00323D82EE6EAE2004C5779 /* TCA.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C00323D72EE6EAE2004C5779 /* TCA */ = {
+		C00323D72EE6EAE2004C5779 /* TCA Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C00323E32EE6EAE3004C5779 /* Build configuration list for PBXNativeTarget "TCA" */;
+			buildConfigurationList = C00323E32EE6EAE3004C5779 /* Build configuration list for PBXNativeTarget "TCA Demo" */;
 			buildPhases = (
 				C00323D42EE6EAE2004C5779 /* Sources */,
 				C00323D52EE6EAE2004C5779 /* Frameworks */,
@@ -68,12 +59,12 @@
 			fileSystemSynchronizedGroups = (
 				C00323DA2EE6EAE2004C5779 /* TCA */,
 			);
-			name = TCA;
+			name = "TCA Demo";
 			packageProductDependencies = (
 				C00323EB2EE6EB6B004C5779 /* ComposableArchitecture */,
 			);
 			productName = TCA;
-			productReference = C00323D82EE6EAE2004C5779 /* TCA.app */;
+			productReference = C064C33E2EEF1BFF00E576D3 /* TCA Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,11 +95,11 @@
 				C00323EA2EE6EB6B004C5779 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = C00323D92EE6EAE2004C5779 /* Products */;
+			productRefGroup = C00323CF2EE6EAE2004C5779;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C00323D72EE6EAE2004C5779 /* TCA */,
+				C00323D72EE6EAE2004C5779 /* TCA Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -276,7 +267,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Try.UIKitWithSwiftUI.TCA.TCA;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "TCA Demo";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,7 +295,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Try.UIKitWithSwiftUI.TCA.TCA;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "TCA Demo";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -323,7 +314,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C00323E32EE6EAE3004C5779 /* Build configuration list for PBXNativeTarget "TCA" */ = {
+		C00323E32EE6EAE3004C5779 /* Build configuration list for PBXNativeTarget "TCA Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C00323E42EE6EAE3004C5779 /* Debug */,
